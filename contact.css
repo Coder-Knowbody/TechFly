@@ -1,0 +1,229 @@
+html {
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+#ham-button, #close-button {
+  background: none;
+  border: none;
+  position: relative;
+  top: 5px;
+  left: 5%;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: black;
+}
+#close-button {
+  display: none;
+}
+.nav-text {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  border: 1px solid black;
+  max-width: 45%;
+  min-width:250px;
+  background-color: #fff;
+  position: absolute;
+  left: 1%;
+  top: 50px;
+  height: 350px;
+  display: none;
+  z-index: 1;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+#events-link, #registration-link, #login-link, #contact-link {
+  text-decoration: none;
+  color: black;
+  font-weight: lighter;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #333;
+  text-align: center;
+  border-right: none;
+}
+#home-link {
+  text-decoration: none;
+  color: black;
+  font-weight: lighter;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #333;
+  text-align: center;
+  border-right: none;
+  border-top: none;
+  left: 0;
+  top: 0;
+  position: absolute;
+}
+#events-link {
+  left: 0;
+  top: 12%;
+  position: absolute;
+}
+#registration-link {
+  left: 0;
+  top: 24%;
+  position: absolute;
+}
+#login-link {
+  left: 0;
+  top: 36%;
+  position: absolute;
+}
+#contact-link {
+  left: 0;
+  top: 48%;
+  position: absolute;
+}
+.footer2 {
+  position: absolute;
+  bottom: 5%;
+  text-align: center;
+  font-size: .8rem;
+  width: 100%;
+}
+.social1 a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin: 0 10px;
+}
+.social1 a:hover {
+  color: #555;
+}
+.name-text {
+  text-align: center;
+  color: black;
+}
+.logo {
+  height: 50px;
+  width: auto;
+  right: 3%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  animation: animation3 1s;
+}
+@keyframes animation3 {
+  0% {
+    transform: translateX(-300%);
+  }
+}
+.logo-image {
+  height: 40px;
+  width: auto;
+}
+.headd {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: black;
+}
+.header {
+  background-color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  position: relative;
+  top: 0;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.contact-page {
+  margin: 100px auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  min-width: 250px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+h2 {
+  text-align: center;
+  color: #2e44c0;
+  z-index: 2; 
+}
+.contact-page input {
+  border: 1px solid #333;
+  background-color: transparent;
+  padding: 10px;
+  width: 100%;
+}
+.contact-form {
+  display: flex;
+  margin-top: 20px;
+  width: 50%;
+  flex-direction: column;
+  gap: 10px;
+  animation: animation5 1s;
+}
+@keyframes animation5 {
+  0% {
+    transform: translateY(-150%);
+  }
+}
+.contact-form button {
+  padding: 10px;
+  background-color: #2e44c0;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  color: #fff;
+}
+.contact-info {
+  margin-top: 50px;
+  margin-bottom: 15px;
+  animation: animation4 1s;
+}
+@keyframes animation4 {
+  0% {
+    transform: translateX(150%); 
+  }
+}
+.contact-info h3 {
+  color: #2e44c0;
+}
+.contact-info p {
+  font-weight: bold;
+  font-style: oblique;
+  font-size: .9rem;
+}
+@media screen and (min-width: 1000px) {
+  .footer2 {
+    display: none;
+  }
+  #ham-button, #close-button {
+    display: none;
+  }
+  .nav-text {
+    display: flex !important;
+    position: static;
+    flex-direction: row;
+    border: none;
+    max-width: none;
+    height: auto;
+    box-shadow: none;
+    background-color: transparent;
+    gap: 30px;
+    left: 50%;
+  }
+  #home-link, #events-link, #registration-link, #login-link, #contact-link {
+    border: none;
+    padding: 0;
+    width: auto;
+    position: static;
+    font-size: 1rem;
+  }
+}

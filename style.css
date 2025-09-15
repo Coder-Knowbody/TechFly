@@ -1,0 +1,332 @@
+html {
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+#ham-button, #close-button {
+  background: none;
+  border: none;
+  position: relative;
+  top: 5px;
+  left: 5%;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: black;
+}
+#close-button {
+  display: none;
+}
+.nav-text {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  border: 1px solid black;
+  max-width: 45%;
+  min-width:250px;
+  background-color: #fff;
+  position: absolute;
+  left: 1%;
+  top: 50px;
+  height: 350px;
+  display: none;
+  z-index: 1;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+#events-link, #registration-link, #login-link, #contact-link {
+  text-decoration: none;
+  color: black;
+  font-weight: lighter;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #333;
+  text-align: center;
+  border-right: none;
+}
+#home-link {
+  text-decoration: none;
+  color: black;
+  font-weight: lighter;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #333;
+  text-align: center;
+  border-right: none;
+  border-top: none;
+  left: 0;
+  top: 0;
+  position: absolute;
+}
+#events-link {
+  left: 0;
+  top: 12%;
+  position: absolute;
+}
+#registration-link {
+  left: 0;
+  top: 24%;
+  position: absolute;
+}
+#login-link {
+  left: 0;
+  top: 36%;
+  position: absolute;
+}
+#contact-link {
+  left: 0;
+  top: 48%;
+  position: absolute;
+}
+.footer2 {
+  position: absolute;
+  bottom: 5%;
+  text-align: center;
+  font-size: .8rem;
+  width: 100%;
+}
+.social1 a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin: 0 10px;
+}
+.social1 a:hover {
+  color: #555;
+}
+.name-text {
+  text-align: center;
+  color: black;
+}
+.logo {
+  height: 50px;
+  width: auto;
+  right: 3%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  animation: animation3 1s;
+}
+@keyframes animation3 {
+  0% {
+    transform: translateX(-300%);
+  }
+}
+.logo-image {
+  height: 40px;
+  width: auto;
+}
+.headd {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: black;
+}
+.header {
+  background-color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  position: relative;
+  top: 0;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.hero {
+  background: url('product-school-xeEukPZjZi0-unsplash.jpg') no-repeat center center/cover;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 120px;
+  color: white;
+  animation: animation1 1s;
+}
+@keyframes animation1 {
+  0% {
+    transform: scale(210%);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.hero p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 200px;
+  width: 90%;
+  color: #f4f4f4;
+}
+.hero a {
+  background-color: #2e44c0;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 270px;
+  animation: animation2 1s;
+}
+@keyframes animation2 {
+  0% {
+    transform: translateX(-150%);
+  }
+}
+.hero a:hover {
+  background-color: #1b2a8c;
+}
+.about {
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 750px;
+  min-width: 300px;
+  position: relative;
+  margin: 20px auto;
+  border-radius: 10px;
+}
+.about:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: .4s all ease-in-out;
+}
+.events {
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 800px;
+  min-width: 300px;
+  position: relative;
+  margin: 20px auto;
+  border-radius: 10px;
+}
+.events:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: .4s all ease-in-out;
+}
+.events h2 {
+  margin-bottom: 10px;
+}
+.events ul {
+  list-style: none;
+  text-align: center;
+}
+.events li {
+  margin-bottom: 10px;
+  text-align: left;
+}
+.events a {
+  color: #2e44c0;
+  text-decoration: none;
+}
+.events a:hover {
+  text-decoration: underline;
+  transition: .4s all ease-in-out;
+}
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: 20px;
+}
+.footer p {
+  margin: 0;
+}
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 10px;
+}
+.social a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+.social a:hover {
+  color: #ddd;
+  transition: .4s all ease-in-out;
+}
+.missionandvision {
+  display: flex;
+  justify-content: space-around;
+  background: white;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  min-width: 300px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border-radius: 10px;
+}
+.missionandvision .mission, .missionandvision .vision {
+  width: 45%;
+}
+.missionandvision h2 {
+  margin-bottom: 10px;
+  color: #2e44c0;
+}
+.missionandvision:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: .4s all ease-in-out;
+}
+h2 {
+  color: #2e44c0;
+}
+h3 {
+  color: #2e44c0;
+}
+@media screen and (min-width: 1000px) {
+  .footer2 {
+    display: none;
+  }
+  #ham-button, #close-button {
+    display: none;
+  }
+  .nav-text {
+    display: flex !important;
+    position: static;
+    flex-direction: row;
+    border: none;
+    max-width: none;
+    height: auto;
+    box-shadow: none;
+    background-color: transparent;
+    gap: 30px;
+    left: 50%;
+  }
+  #home-link, #events-link, #registration-link, #login-link, #contact-link {
+    border: none;
+    padding: 0;
+    width: auto;
+    position: static;
+    font-size: 1rem;
+  }
+}
