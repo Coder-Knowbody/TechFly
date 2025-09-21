@@ -179,17 +179,21 @@ body {
   border: none;
   text-transform: capitalize;
   position: relative;
-  left: 100px;
+  left: 63%;
   top: -32px;
+  width: 50px;
   background-color: transparent;
+  cursor: pointer;
 }
 #show {
   border: none;
   text-transform: capitalize;
   position: relative;
-  left: 85px;
+  left: 63%;
+  width: 50px;
   top: -32px;
   background-color: transparent;
+  cursor: pointer;
 
 }
 .btn-login {
